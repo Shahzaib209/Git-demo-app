@@ -1,0 +1,1 @@
+# Filhal kuch nhi bs sikhna kaliya kr raha ho
