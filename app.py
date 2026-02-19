@@ -1,6 +1,6 @@
 import streamlit as st
 
-import streamlit as st
+
 from streamlit_option_menu import option_menu # You may need to: pip install streamlit-option-menu
 
 # --- PAGE CONFIG ---
@@ -32,6 +32,18 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+
+# --- NAVIGATION BAR ---
+# Using a horizontal menu for a website feel
+selected = option_menu(
+    menu_title=None,
+    options=["Home", "Projects", "Resume", "Contact"],
+    icons=["house", "code-slash", "file-earmark-person", "envelope"],
+    menu_icon="cast",
+    default_index=0,
+    orientation="horizontal",
+)
+
 st.title("Muhammad Shahzaib")
 col1,col2 = st.columns(2)
 
@@ -45,3 +57,5 @@ st.header('About')
 st.markdown('''A passionate AI/ML Engineer. Ready to dive deep in the world of AI''')
 st.subheader('Skills')
 st.markdown(''''Data Preprocessing and Feature Engineering''')
+
+
