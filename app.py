@@ -82,3 +82,23 @@ elif selected == "Projects":
 
 
 
+# --- RESUME SECTION ---
+elif selected == "Resume":
+    st.title("📄 Resume")
+
+    # You can allow users to download your PDF
+    with open("your_resume.pdf", "rb") as file:
+        st.download_button(
+            label="Download Full Resume",
+            data=file,
+            file_name="Shahzaib_AI_Resume.pdf",
+            mime="application/pdf"
+        )
+
+    st.markdown("""
+    ### Experience
+    **AI Engineer Intern** | *Tech Solutions Inc.*
+    - Built and optimized CNN models reducing error rates by 15%.""")
+
+
+
