@@ -63,5 +63,10 @@ st.sidebar.markdown('''
 - Home
 - Projects
 - Resume''')
+st.sidebar.header('About')
+st.sidebar.markdown('''
+-Skill
+-Python
+-Machine Learning''')
 
 
