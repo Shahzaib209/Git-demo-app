@@ -62,8 +62,23 @@ if selected == "Home":
         skill_html = "".join([f'<div class="skill-tag">{s}</div>' for s in skills])
         st.markdown(skill_html, unsafe_allow_html=True)
 
+# --- PROJECTS SECTION ---
+elif selected == "Projects":
+        st.title("🚀 Featured Projects")
 
-        
+        col_a, col_b = st.columns(2)
+
+        with col_a:
+            with st.container(border=True):
+                st.subheader("Computer Vision: Object Detection")
+                st.write("Implemented a real-time YOLOv8 model for industrial safety monitoring.")
+                st.button("View Source Code", key="proj1")
+
+        with col_b:
+            with st.container(border=True):
+                st.subheader("NLP: Sentiment Analyzer")
+                st.write("A deep learning model using Transformers to analyze customer feedback.")
+                st.button("View Source Code", key="proj2")
 
 
 
