@@ -58,4 +58,10 @@ st.markdown('''A passionate AI/ML Engineer. Ready to dive deep in the world of A
 st.subheader('Skills')
 st.markdown(''''Data Preprocessing and Feature Engineering''')
 
+st.sidebar.title('Menu')
+st.sidebar.markdown('''
+- Home
+- Projects
+- Resume''')
+
 
