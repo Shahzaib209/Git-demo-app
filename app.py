@@ -28,5 +28,15 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+# --- NAVIGATION ---
+selected = option_menu(
+    menu_title=None,
+    options=["Home", "Projects", "Resume", "Contact"],
+    icons=["house", "cpu", "file-text", "envelope"],
+    menu_icon="cast",
+    default_index=0,
+    orientation="horizontal",
+)
+
 
 
