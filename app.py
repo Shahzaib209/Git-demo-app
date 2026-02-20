@@ -98,7 +98,28 @@ elif selected == "Resume":
     st.markdown("""
     ### Experience
     **AI Engineer Intern** | *Tech Solutions Inc.*
-    - Built and optimized CNN models reducing error rates by 15%.""")
+    - Built and optimized CNN models reducing error rates by 15%.
+    ### Education
+    **BS in Artificial Intelligence** | *Islamia University of Bahawalpur*
+    """)
+
+
+
+# --- CONTACT SECTION ---
+elif selected == "Contact":
+    st.title("📩 Get In Touch")
+
+    with st.form("contact_form"):
+        name = st.text_input("Name")
+        email = st.text_input("Email")
+        message = st.text_area("Message")
+        submit = st.form_submit_button("Send Message")
+
+        if submit:
+            st.success(f"Thanks {name}, your message has been 'sent' (connect a backend here)!")
+
+
+
 
 
 
