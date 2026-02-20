@@ -38,3 +38,6 @@ selected = option_menu(
     orientation="horizontal",
 )
 
+# --- SIDEBAR (Optional cleanup) ---
+st.sidebar.title("Find Me Online")
+st.sidebar.info("🔗 [LinkedIn](https://linkedin.com)\n\n🐙 [GitHub](https://github.com)")
