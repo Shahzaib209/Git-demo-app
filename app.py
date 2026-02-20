@@ -38,5 +38,32 @@ selected = option_menu(
     orientation="horizontal",
 )
 
+# --- HOME SECTION ---
+if selected == "Home":
+    col1, col2 = st.columns([1, 2], gap="large")
+
+    with col1:
+        # Placeholder for your image - ensure the file exists in your directory
+        st.image('my imh.jpg', use_container_width=True)
+
+    with col2:
+        st.title("Muhammad Shahzaib")
+        st.subheader("AI Engineer & ML Specialist")
+        st.write("""
+            As a passionate and results-driven AI Engineer, I specialize in designing, 
+            developing, and deploying machine learning models to solve complex problems. 
+            I bridge the gap between raw data and actionable intelligence.
+        """)
+
+        st.write("---")
+        st.header("Technical Arsenal")
+
+        skills = ["Python", "TensorFlow", "PyTorch", "Scikit-Learn", "OpenCV", "NLP", "Streamlit", "SQL", "Docker"]
+        skill_html = "".join([f'<div class="skill-tag">{s}</div>' for s in skills])
+        st.markdown(skill_html, unsafe_allow_html=True)
+
+
+        
+
 
 
