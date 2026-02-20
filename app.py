@@ -38,5 +38,3 @@ selected = option_menu(
     orientation="horizontal",
 )
 
-
-
