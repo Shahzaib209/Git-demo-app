@@ -38,11 +38,11 @@ selected = option_menu(
     orientation="horizontal",
 )
 
-<<<<<<< HEAD
+
 # --- SIDEBAR (Optional cleanup) ---
 st.sidebar.title("Find Me Online")
 st.sidebar.info("🔗 [LinkedIn](https://linkedin.com)\n\n🐙 [GitHub](https://github.com)")
-=======
+
 # --- HOME SECTION ---
 if selected == "Home":
     col1, col2 = st.columns([1, 2], gap="large")
@@ -92,11 +92,11 @@ elif selected == "Resume":
     st.title("📄 Resume")
 
     # You can allow users to download your PDF
-    with open("your_resume.pdf", "rb") as file:
+    with open("Shahzaib CV resume_final.pdf", "rb") as file:
         st.download_button(
             label="Download Full Resume",
             data=file,
-            file_name="Shahzaib_AI_Resume.pdf",
+            file_name="Shahzaib CV resume_final.pdf",
             mime="application/pdf"
         )
 
@@ -128,4 +128,3 @@ elif selected == "Contact":
 
 
 
->>>>>>> home_page
